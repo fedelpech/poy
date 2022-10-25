@@ -1,0 +1,99 @@
+/* Misc */
+/* Variables */
+/* Normalize */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%;
+  font-family: "Inter", -apple-system;
+  overflow-x: hidden; }
+
+body {
+  display: grid;
+  grid-template-columns: 7% 86% 7%;
+  max-width: 100%;
+  min-height: 100vh;
+  background-color: #ffffff;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden; }
+
+ul {
+  list-style-type: none; }
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #222222; }
+
+svg {
+  color: null; }
+
+/* Partials */
+/* Header */
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  grid-column: 1 / 4;
+  height: fit-content;
+  background-color: #fdf8f6;
+  border-bottom: 1px solid #fdf8f6; }
+  header .nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 86%;
+    height: 88px; }
+    header .nav-bar picture img {
+      height: 62px; }
+    header .nav-bar__list {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 1.6rem; }
+      header .nav-bar__list-item {
+        height: fit-content; }
+        header .nav-bar__list-item__link {
+          padding: 6px 10px;
+          font-size: 1.4em;
+          font-weight: 500;
+          border-radius: 4px;
+          transition: 0.2s ease-in-out; }
+          header .nav-bar__list-item__link:hover {
+            background-color: #fff1ea; }
+        header .nav-bar__list-item .on {
+          color: #FF2E00; }
+    header .nav-bar__whatsapp {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      border-radius: 30px;
+      background-color: #25D366;
+      transition: 0.2s ease-in-out; }
+      header .nav-bar__whatsapp:hover {
+        background-color: #21c75e; }
+      header .nav-bar__whatsapp #wsp {
+        fill: #ffffff; }
+      header .nav-bar__whatsapp #wsp-text {
+        font-size: 1.3rem;
+        font-weight: 500;
+        color: #ffffff; }
+
+article {
+  grid-column: 1/4;
+  width: 100%; }
+  article img {
+    height: 400px; }
+
+/* Views */
+/* Index */

@@ -1,0 +1,47 @@
+/* Normalize */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*,
+::before,
+::after
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html
+{
+    font-size: 62.5%;
+    font-family: $bodyFont;
+    overflow-x: hidden;
+}
+
+body
+{
+    display: grid;
+    grid-template-columns: 7% 86% 7%;
+    max-width: 100%;
+    min-height: 100vh;
+    background-color: $bodyColor4;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+ul 
+{
+    list-style-type: none;
+}
+
+a 
+{
+    display: inline-block;
+    text-decoration: none;
+    color: $bodyColor;
+}
+
+svg 
+{
+    color: null;
+}
